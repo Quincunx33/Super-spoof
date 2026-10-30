@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-ua-forge"
+version = "4.5.0"
+description = "Offline browser UA profiles and authorized TLS, QUIC, DTLS, HTTP/2 diagnostics"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["user-agent", "browser", "http", "tls", "ja3", "ja4", "quic", "dtls", "diagnostics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: System :: Networking :: Monitoring",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40"]
+http = ["curl_cffi>=0.7"]
+capture = ["scapy>=2.5"]
+quic = ["cryptography>=41"]
+
+[project.scripts]
+ua-forge = "ua_forge.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ua_forge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
