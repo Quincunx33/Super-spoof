@@ -20,7 +20,7 @@ Explore deeper network diagnostics when you feel ready.
   <img alt="PyPI publishing pending" src="https://img.shields.io/badge/PyPI-Coming%20Soon-lightgrey?style=flat-square">
 </p>
 
-**[Get started](#-quick-start)** · **[See examples](#-examples)** · **[Advanced guide](docs/ADVANCED.md)** · **[Publishing](PUBLISHING.md)**
+**[Get started](#-quick-start)** · **[See examples](#-examples)** · **[Advanced guide](docs/ADVANCED.md)**
 
 </div>
 
@@ -47,8 +47,6 @@ git clone https://github.com/Quincunx33/Super-spoof.git
 cd Super-spoof
 python -m pip install .
 ~~~
-
-> **Repository access:** This repository is currently private. The clone command requires access. After the package is published to PyPI, you will be able to install with <code>python -m pip install advanced-ua-forge</code> instead.
 
 **Step 2 — Try it**
 
@@ -233,8 +231,6 @@ python -m pytest -q
 ~~~
 
 The v4.5 release candidate previously passed **54 offline automated tests**. That does **not** mean live packet capture, every browser engine, or Cloudflare API access has been verified end to end.
-
-For package release instructions, see **[PUBLISHING.md](PUBLISHING.md)**.
 
 ## 🔐 Responsible use
 
