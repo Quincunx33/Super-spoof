@@ -11,16 +11,17 @@ Explore deeper network diagnostics when you feel ready.
 
 <p>
   <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="Version 4.5.0" src="https://img.shields.io/badge/Version-4.5.0-8A63D2?style=for-the-badge">
+  <a href="https://pypi.org/project/advanced-ua-forge/4.5.0/"><img alt="PyPI release" src="https://img.shields.io/pypi/v/advanced-ua-forge?style=for-the-badge&color=8A63D2&label=PyPI"></a>
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge">
 </p>
 
 <p>
   <img alt="Offline core" src="https://img.shields.io/badge/Core-Works%20Offline-1F8AC0?style=flat-square">
-  <img alt="PyPI publishing pending" src="https://img.shields.io/badge/PyPI-Coming%20Soon-lightgrey?style=flat-square">
+  <a href="https://github.com/Quincunx33/Super-spoof/actions/workflows/ci.yml"><img alt="CI status" src="https://github.com/Quincunx33/Super-spoof/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/Quincunx33/Super-spoof/releases/tag/v4.5.0"><img alt="Latest GitHub release" src="https://img.shields.io/badge/Release-v4.5.0-2EA44F?style=flat-square"></a>
 </p>
 
-**[Get started](#-quick-start)** · **[See examples](#-examples)** · **[Advanced guide](docs/ADVANCED.md)**
+**[Get started](#-quick-start)** · **[See examples](#-examples)** · **[PyPI](https://pypi.org/project/advanced-ua-forge/4.5.0/)** · **[GitHub Release](https://github.com/Quincunx33/Super-spoof/releases/tag/v4.5.0)** · **[Advanced guide](docs/ADVANCED.md)**
 
 </div>
 
@@ -40,13 +41,24 @@ A *User-Agent* is simply a line of text that identifies a browser and device to 
 
 **You need:** Python 3.10 or newer.
 
-**Step 1 — Install from the source repository**
+**Step 1 — Install from PyPI**
+
+~~~bash
+python -m pip install advanced-ua-forge
+~~~
+
+Version **4.5.0** is available on [PyPI](https://pypi.org/project/advanced-ua-forge/4.5.0/). No repository clone is needed for a normal installation.
+
+<details>
+<summary><b>Prefer installing from source?</b></summary>
 
 ~~~bash
 git clone https://github.com/Quincunx33/Super-spoof.git
 cd Super-spoof
 python -m pip install .
 ~~~
+
+</details>
 
 **Step 2 — Try it**
 
@@ -213,9 +225,9 @@ The pure-Python features may work in compatible iOS Python apps, depending on pa
 </details>
 
 <details>
-<summary><b>Is it available on PyPI yet?</b></summary>
+<summary><b>Is it available on PyPI?</b></summary>
 
-Not yet. The <code>advanced-ua-forge</code> package name is prepared for publication, but the PyPI release has not been confirmed. Use the source install above if you have repository access.
+Yes! **Advanced UA Forge v4.5.0** is published on [PyPI](https://pypi.org/project/advanced-ua-forge/4.5.0/). Install it with <code>python -m pip install advanced-ua-forge</code>. The [GitHub Release](https://github.com/Quincunx33/Super-spoof/releases/tag/v4.5.0) also contains downloadable wheel and source distribution files.
 
 </details>
 
@@ -230,7 +242,7 @@ python -m pip install pytest
 python -m pytest -q
 ~~~
 
-The v4.5 release candidate previously passed **54 offline automated tests**. That does **not** mean live packet capture, every browser engine, or Cloudflare API access has been verified end to end.
+The **v4.5.0 release** passed its GitHub Actions test jobs on **Python 3.10, 3.11, 3.12, and 3.13**, with package build and metadata checks also passing. See the [successful release run](https://github.com/Quincunx33/Super-spoof/actions/runs/41138634190). These offline checks do **not** establish successful live packet capture, every browser engine, or production Cloudflare API compatibility.
 
 ## 🔐 Responsible use
 
@@ -242,6 +254,6 @@ Only inspect traffic and Cloudflare zones you own or have explicit permission to
 
 **Made for curious beginners. Ready for deeper diagnostics.**
 
-<sub>Advanced UA Forge v4.5 · MIT License · <a href="LICENSE">License</a> · <a href="docs/ADVANCED.md">Technical documentation</a></sub>
+<sub>Advanced UA Forge v4.5.0 · <a href="https://pypi.org/project/advanced-ua-forge/4.5.0/">PyPI</a> · <a href="https://github.com/Quincunx33/Super-spoof/releases/tag/v4.5.0">Release downloads</a> · <a href="LICENSE">MIT License</a> · <a href="docs/ADVANCED.md">Technical documentation</a></sub>
 
 </div>
