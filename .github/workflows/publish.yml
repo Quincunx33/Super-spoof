@@ -10,7 +10,6 @@ jobs:
     environment:
       name: pypi
     permissions:
-      id-token: write
       contents: read
     steps:
       - uses: actions/checkout@v4
@@ -25,5 +24,8 @@ jobs:
         run: python -m build
       - name: Verify distribution metadata
         run: python -m twine check dist/*
-      - name: Publish using PyPI Trusted Publishing
+      - name: Publish to PyPI using API token
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
