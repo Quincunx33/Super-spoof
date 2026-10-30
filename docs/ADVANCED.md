@@ -18,7 +18,7 @@ print(profile.headers)
 print(profile.validate().as_dict())
 ```
 
-Publishing instructions: [PUBLISHING.md](PUBLISHING.md). Optional native/networking dependencies are **not installed** with the base package. UA strings are samples, not guaranteed to mirror any particular real browser or bypass access controls.
+Optional native/networking dependencies are **not installed** with the base package. UA strings are samples, not guaranteed to mirror any particular real browser or bypass access controls.
 
 ---
 
